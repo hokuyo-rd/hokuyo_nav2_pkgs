@@ -1,0 +1,3 @@
+[submodule "hokuyo_navigation2"]
+	path = hokuyo_navigation2
+	url = https://github.com/hokuyo-rd/hokuyo_navigation2.git
