@@ -4,3 +4,27 @@
 [submodule "hokuyo_navigation2_gui"]
 	path = hokuyo_navigation2_gui
 	url = https://github.com/hokuyo-rd/hokuyo_navigation2_gui.git
+[submodule "vizanti"]
+	path = vizanti
+	url = https://github.com/MoffKalast/vizanti.git
+	branch = ros2
+[submodule "fix2xyz_packages_ros2"]
+	path = fix2xyz_packages_ros2
+	url = https://github.com/hokuyo-rd/fix2xyz_packages_ros2.git
+[submodule "hokuyo_slam_ros2"]
+	path = hokuyo_slam_ros2
+	url = https://github.com/hokuyo-rd/hokuyo_slam_ros2.git
+[submodule "jsk_visualization"]
+	path = jsk_visualization
+	url = https://github.com/hokuyo-rd/jsk_visualization.git
+[submodule "lio_nav2_bringup"]
+	path = lio_nav2_bringup
+	url = https://github.com/hokuyo-furo-org/lio_nav2_bringup.git
+	branch = release
+[submodule "simple_fastlio_localization_ros2"]
+	path = simple_fastlio_localization_ros2
+	url = https://github.com/hokuyo-rd/simple_fastlio_localization_ros2.git
+	branch = release
+[submodule "waypoint_manager"]
+	path = waypoint_manager
+	url = https://github.com/hokuyo-rd/waypoint_manager.git
