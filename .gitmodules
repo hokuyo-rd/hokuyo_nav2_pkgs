@@ -1,12 +1,13 @@
 [submodule "hokuyo_navigation2"]
 	path = hokuyo_navigation2
 	url = https://github.com/hokuyo-rd/hokuyo_navigation2.git
+	branch = ATC_2025
 [submodule "hokuyo_navigation2_gui"]
 	path = hokuyo_navigation2_gui
 	url = https://github.com/hokuyo-rd/hokuyo_navigation2_gui.git
 [submodule "vizanti"]
 	path = vizanti
-	url = https://github.com/MoffKalast/vizanti.git
+	url = https://github.com/hokuyo-rd/vizanti.git
 	branch = ros2
 [submodule "fix2xyz_packages_ros2"]
 	path = fix2xyz_packages_ros2
@@ -28,3 +29,11 @@
 [submodule "waypoint_manager"]
 	path = waypoint_manager
 	url = https://github.com/hokuyo-rd/waypoint_manager.git
+[submodule "rosbridge_suite"]
+	path = rosbridge_suite
+	url = https://github.com/hokuyo-rd/rosbridge_suite.git
+	branch = humble
+[submodule "nmea_msgs.git"]
+	path = nmea_msgs.git
+	url = https://github.com/hokuyo-rd/nmea_msgs.git
+	branch = ros2
