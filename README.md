@@ -3,12 +3,14 @@
 ROS2 packages of Navigation system for outdoor mobile robot,
 by using navigation2 for hokuyo RSF (fusion sensor) consisted by hokuyo YVT-35LX and RTK-GNSS.
 
+![hokuyo_navigation2](Image/hokuyo_nav2_at_nakanoshima.png)
+
 # Setup
 
 ```bash
 sudo apt-get update 
 
-cd YOUR_ROS2_WS
+cd YOUR_ROS2_WS/src
 git clone --recursive https://github.com/hokuyo-rd/hokuyo_nav2_pkgs.git hokuyo_navigation2
 rosdep update
 rosdep install --from-paths src/hokuyo_navigation2 --ignore-src -r -y
