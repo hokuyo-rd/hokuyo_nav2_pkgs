@@ -40,6 +40,8 @@
 
 ## セットアップ
 
+ROS2 Version: Humble
+
 ```bash
 sudo apt-get update 
 # 1. build ros2 packages
