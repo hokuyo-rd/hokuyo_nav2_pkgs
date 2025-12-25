@@ -52,11 +52,12 @@ rosdep install --from-paths src/hokuyo_navigation2 --ignore-src -r -y
 cd <YOUR_ROS2_WORKSPACE>/src/hokuyo_navigation2
 pip3 install -r requirements.txt
 
-cd ../../../
 
 # 3. hokuyo_slam_ros2 build
 sudo apt-get install libsqlite3-dev sqlite3 libeigen3-dev qtbase5-dev clang qtcreator libqt5x11extras5-dev
 
+cd <YOUR_ROS2_WORKSPACE>
+cd ../
 mkdir hokuyo_lib
 cd hokuyo_lib
 
