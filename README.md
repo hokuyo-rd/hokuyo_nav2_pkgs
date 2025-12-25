@@ -119,8 +119,6 @@ cd <YOUR_ROS2_WORKSPACE>/src/hokuyo_navigation2/hokuyo_navigation2
 
 Webブラウザで `http://<ホストマシンのIPアドレス>:5050` にアクセスします。GUIの指示に従い、マッピングやナビゲーションを実行してください。詳細は [`hokuyo_navigation2_gui`](https://github.com/hokuyo-rd/hokuyo_navigation2_gui) のドキュメントを参照してください。
 
-サーバーなしでの実行
-
 ## 停止方法
 
 サーバーの停止
