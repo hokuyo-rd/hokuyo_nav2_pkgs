@@ -16,7 +16,7 @@
 
 - **ロボットとセンサノードの起動**
   - モータドライバ・センサのROS2ノードの起動
-  **本パッケージはモータドライバとして [icart_mini_driver_ros2](https://github.com/hokuyo-rd/icart_mini_driver_ros2)を使用したサンプルとなっています。使用するモータドライバに合わせて[このスクリプト](https://github.com/hokuyo-rd-release/hokuyo_navigation2/blob/release/scripts/navigation/nav_common.sh)のload_motor_driver関数を変更してください。**
+  **本パッケージはモータドライバとして [icart_mini_driver_ros2](https://github.com/hokuyo-rd/icart_mini_driver_ros2)を使用したサンプルとなっています。使用するモータドライバに合わせて[このスクリプト](https://github.com/hokuyo-rd-release/hokuyo_navigation2/blob/release/scripts/navigation/nav_common.sh)のlaunch_motor_driver関数を変更してください。**
 - **3D SLAMと2Dウェイポイントファイル出力の同時実行**:
   - `hokuyo_lio` を用いた高精度なLiDAR慣性オドメトリ（LIO）と3D点群マップ生成。
   - ROS Bagから`lio_raw`（軌跡ベース）または`p2o`（点群ベース）の3Dマップ（`.pcd`）を作成。
