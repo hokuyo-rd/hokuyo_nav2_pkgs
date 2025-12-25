@@ -44,7 +44,7 @@
 sudo apt-get update 
 # 1. build ros2 packages
 cd <YOUR_ROS2_WORKSPACE>/src
-git clone --recursive https://github.com/hokuyo-rd/hokuyo_nav2_pkgs.git hokuyo_navigation2
+git clone --recursive https://github.com/hokuyo-rd/hokuyo_navigation2.git
 rosdep update
 rosdep install --from-paths src/hokuyo_navigation2 --ignore-src -r -y
 
