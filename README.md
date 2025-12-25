@@ -16,20 +16,20 @@
 
 - **ロボットとセンサノードの起動**
   - モータドライバ・センサのROS2ノードの起動
-  **本パッケージはモータドライバとして [icart_mini_driver_ros2](https://github.com/hokuyo-rd/icart_mini_driver_ros2)を使用したサンプルとなっています。使用するモータドライバに合わせて[このスクリプト](https://github.com/hokuyo-rd/hokuyo_navigation2/blob/release/scripts/navigation/nav_common.sh)のload_motor_driver関数を変更してください。**
+  **本パッケージはモータドライバとして [icart_mini_driver_ros2](https://github.com/hokuyo-rd/icart_mini_driver_ros2)を使用したサンプルとなっています。使用するモータドライバに合わせて[このスクリプト](https://github.com/hokuyo-rd-release/hokuyo_navigation2/blob/release/scripts/navigation/nav_common.sh)のload_motor_driver関数を変更してください。**
 - **3D SLAMと2Dウェイポイントファイル出力の同時実行**:
   - `hokuyo_lio` を用いた高精度なLiDAR慣性オドメトリ（LIO）と3D点群マップ生成。
   - ROS Bagから`lio_raw`（軌跡ベース）または`p2o`（点群ベース）の3Dマップ（`.pcd`）を作成。
   - 3D点群マップ生成と同時にウェイポイント作成
   - 3D点群マップをNav2用の2Dグリッドマップ（`.pgm`, `.yaml`）へ変換。
 
-- **ナビゲーション [`hokuyo_navigation2`](https://github.com/hokuyo-rd/hokuyo_navigation2)**:
+- **ナビゲーション [`hokuyo_navigation2`](https://github.com/hokuyo-rd-release/hokuyo_navigation2)**:
   - `hokuyo_rsf`を利用したリアルタイム3D自己位置推定を用いた自律走行
   - 3D点群マップと`simple_fastlio_localization` を利用したリアルタイム自己位置推定を用いた自律走行
   - Nav2 (Navigation2) スタックと連携し、指定されたウェイポイントに沿った自律走行。
   - 単一マップ走行および複数マップを連続して走行するマルチマップナビゲーションに対応。
 
-- **ブラウザベースの統合GUI [`hokuyo_navigation2_gui`](https://github.com/hokuyo-rd/hokuyo_navigation2_gui)**:
+- **ブラウザベースの統合GUI [`hokuyo_navigation2_gui`](https://github.com/hokuyo-rd-release/hokuyo_navigation2_gui)**:
   - **プロセス実行**: データ取得、マッピング、ナビゲーションの各プロセスをブラウザから起動。
   - **ファイル管理**: マップ、ウェイポイント、設定ファイルなどをブラウザ上で管理（作成、名前変更、削除）。
   - **高機能エディタ**:
