@@ -1,26 +1,26 @@
 [submodule "hokuyo_navigation2"]
 	path = hokuyo_navigation2
-	url = https://github.com/hokuyo-rd/hokuyo_navigation2.git
+	url = https://github.com/hokuyo-rd-release/hokuyo_navigation2.git
 	branch = ATC_2025
 [submodule "hokuyo_navigation2_gui"]
 	path = hokuyo_navigation2_gui
-	url = https://github.com/hokuyo-rd/hokuyo_navigation2_gui.git
+	url = https://github.com/hokuyo-rd-release/hokuyo_navigation2_gui.git
 [submodule "vizanti"]
 	path = vizanti
-	url = https://github.com/hokuyo-rd/vizanti.git
+	url = https://github.com/hokuyo-rd-release/vizanti.git
 	branch = ros2
 [submodule "fix2xyz_packages_ros2"]
 	path = fix2xyz_packages_ros2
-	url = https://github.com/hokuyo-rd/fix2xyz_packages_ros2.git
+	url = https://github.com/hokuyo-rd-release/fix2xyz_packages_ros2.git
 [submodule "hokuyo_slam_ros2"]
 	path = hokuyo_slam_ros2
-	url = https://github.com/hokuyo-rd/hokuyo_slam_ros2.git
+	url = https://github.com/hokuyo-rd-release/hokuyo_slam_ros2.git
 [submodule "jsk_visualization"]
 	path = jsk_visualization
-	url = https://github.com/hokuyo-rd/jsk_visualization.git
+	url = https://github.com/hokuyo-rd-release/jsk_visualization.git
 [submodule "lio_nav2_bringup"]
 	path = lio_nav2_bringup
-	url = https://github.com/hokuyo-furo-org/lio_nav2_bringup.git
+	url = https://github.com/hokuyo-rd-release/lio_nav2_bringup.git
 	branch = release
 [submodule "simple_fastlio_localization_ros2"]
 	path = simple_fastlio_localization_ros2
@@ -28,12 +28,12 @@
 	branch = release
 [submodule "waypoint_manager"]
 	path = waypoint_manager
-	url = https://github.com/hokuyo-rd/waypoint_manager.git
+	url = https://github.com/hokuyo-rd-release/waypoint_manager.git
 [submodule "rosbridge_suite"]
 	path = rosbridge_suite
-	url = https://github.com/hokuyo-rd/rosbridge_suite.git
+	url = https://github.com/hokuyo-rd-release/rosbridge_suite.git
 	branch = humble
 [submodule "nmea_msgs.git"]
 	path = nmea_msgs.git
-	url = https://github.com/hokuyo-rd/nmea_msgs.git
+	url = https://github.com/hokuyo-rd-release/nmea_msgs.git
 	branch = ros2
