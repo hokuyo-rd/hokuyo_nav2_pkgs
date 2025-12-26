@@ -92,6 +92,7 @@ mkdir build
 cmake -Bbuild . && cmake --build build
 
 # 4. colcon build
+cd <YOUR_ROS2_WORKSPACE>
 colcon build
 colcon build --symlink-install --packages-select hokuyo_navigation2 lio_nav2_bringup simple_fastlio_localization
 
