@@ -3,12 +3,12 @@ ament_copyright==0.12.14
 ament_flake8==0.12.14
 ament_index_python==1.4.0
 ament_pep257==0.12.14
-autobahn_rce==0.6.0.5
+autobahn
 builtin_interfaces==1.2.2
 cbor2==5.4.2
 example_interfaces==0.9.3
-Flask==2.0.1
-Flask_Sockets==0.2.1
+Flask
+Flask_Sockets
 geometry_msgs==4.9.0
 gevent==25.8.2
 gevent_websocket==0.10.1
@@ -19,17 +19,17 @@ matplotlib==3.5.1
 nav2_common==1.1.20
 nav2_msgs==1.1.20
 nav_msgs==4.9.0
-numpy==1.21.5
-numpy==1.22.4
-numpy==1.24.4
+#numpy==1.21.5
+#numpy==1.22.4
+#numpy==1.24.4
+numpy==1.23.4
 open3d==0.19.0
 pathos==0.3.4
-Pillow==9.0.1
-Pillow==12.0.0
+Pillow
 pymongo==4.15.5
 pyproj==3.7.1
-PyQt5==5.15.11
-PyQt5_sip==12.9.1
+PyQt5
+PyQt5_sip
 pyridescence==0.1.9
 pytest==6.2.5
 rcl_interfaces==1.2.2
@@ -50,16 +50,16 @@ scipy==1.8.0
 sensor_msgs==4.9.0
 sensor_msgs_py==4.9.0
 setuptools==68.0.0
-setuptools==80.9.0
-setuptools==59.6.0
+# setuptools==80.9.0
+# setuptools==59.6.0
 simplejson==3.17.6
 six==1.16.0
 std_msgs==4.9.0
 std_srvs==4.9.0
 tf2_ros_py==0.25.17
-tf_transformations==1.1.0
+#ros-humble-tf_transformations
 tornado==6.5.4
-tornado==6.1
+# tornado==6.1
 transforms3d==0.4.2
 Twisted==22.1.0
 tqdm
