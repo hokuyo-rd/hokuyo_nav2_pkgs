@@ -51,6 +51,7 @@ cd <YOUR_ROS2_WORKSPACE>/src
 git clone --recursive https://github.com/Hokuyo-aut/hokuyo_navigation2.git
 rosdep update
 rosdep install --from-paths src/hokuyo_navigation2 --ignore-src -r -y
+sudo apt-get install ros-humble-tf-transformations ros-humble-joint-state-publisher ros-humble-robot-state-publisher
 
 # 2. Python パッケージ
 cd <YOUR_ROS2_WORKSPACE>/src/hokuyo_navigation2
@@ -58,6 +59,7 @@ pip3 install -r requirements.txt
 
 # 3. Motor_driver if you need.
 # ypspurのインストール
+mkdir ~/hokuyo_lib
 cd ~/hokuyo_lib
 sudo apt-get install libmodbus-dev
 git clone https://github.com/hokuyo-rd-release/yp-spur.git
@@ -70,28 +72,22 @@ sudo make install
 
 # モータドライバインストールの確認
 # 端末 1
-ypspur-coordinator -d /dev/ttyUSB0 --blvr -p <PATH_TO_YOUR_PARAM_FILE>/wizurg_lio.param
+# ypspur-coordinator -d /dev/ttyUSB0 --blvr -p <PATH_TO_YOUR_PARAM_FILE>/wizurg_lio.param
 
 # 端末 2
-cd ~/colcon_ws/src/yp-spur/build/sample
-./run-test
+# cd ~/colcon_ws/src/yp-spur/build/sample
+# ./run-test
 
 # icart_mini_driver_ros2のインストール
 cd <YOUR_ROS2_WORKSPACE>
-sudo apt-get install ros-humble-joint-state-publisher ros-humble-robot-state-publisher
 git clone https://github.com/hokuyo-rd-release/icart_mini_driver_ros2.git
 colcon build --symlink-install --packages-select icart_mini_driver
 
 # 3. hokuyo_slam_ros2 build
 sudo apt-get install libsqlite3-dev sqlite3 libeigen3-dev qtbase5-dev clang qtcreator libqt5x11extras5-dev
 
-cd <YOUR_ROS2_WORKSPACE>
-cd ../
-mkdir hokuyo_lib
-cd hokuyo_lib
-
 ## proj
-cd hokuyo_lib
+cd ~/hokuyo_lib
 wget https://download.osgeo.org/proj/proj-9.4.1.tar.gz
 tar -zxvf proj-9.4.1.tar.gz
 cd proj-9.4.1
@@ -102,7 +98,7 @@ cmake --build .
 sudo cmake --build . --target install
 
 ## pcl 1.14.1 ビルドに時間がかかります。
-cd hokuyo_lib
+cd ~/hokuyo_lib
 wget https://github.com/PointCloudLibrary/pcl/releases/download/pcl-1.14.1/source.tar.gz -O pcl.tar.gz
 tar -xvf pcl.tar.gz
 cd pcl
