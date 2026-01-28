@@ -49,6 +49,7 @@ sudo apt-get install -y tree xdotool wmctrl zenity bc
 # 1. build ros2 packages
 cd <YOUR_ROS2_WORKSPACE>/src
 git clone --recursive https://github.com/Hokuyo-aut/hokuyo_navigation2.git
+cd <YOUR_ROS2_WORKSPACE>
 rosdep update
 rosdep install --from-paths src/hokuyo_navigation2 --ignore-src -r -y
 sudo apt-get install ros-humble-tf-transformations ros-humble-joint-state-publisher ros-humble-robot-state-publisher
